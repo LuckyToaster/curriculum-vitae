@@ -1,0 +1,236 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    color: #ebdbb2;
+    background-image: url('images/2.jpg');
+}
+
+.supreme-div-father-of-all-divs {
+    height: 100%;
+}
+
+header {
+    background-color: #282828;
+    color: #ebdbb2;
+    padding: 4pt;
+    font-size: 15pt;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#born {
+    float: left;
+    margin-left: 5pt;
+}
+
+#date {
+    float: right;
+    margin-right: 5pt;
+}
+
+#name {
+    float: center;
+    text-align: center;
+}
+
+#phone {
+    color: #b8bb26;
+}
+
+#linkedin {
+    color: #458588;
+}
+
+#mail {
+    color: #fabd2f;
+}
+
+#app-devel {
+    color: #458588;
+}
+
+#car-icon {
+    color: #fb4934;
+}
+
+#code {
+    color: red;
+}
+
+#laptop-icon {
+    color: #689d6a;
+}
+
+#book-icon {
+    color: #b16286;
+}
+
+#dumbbell-icon {
+    color: #d79921;
+}
+
+.languages {
+    margin: 0;
+    display: inline-block;
+    margin-right: 20pt;
+}
+
+.language {
+    margin-left: 10pt;
+}
+
+.spain {
+    width: 20pt;
+    height: auto;
+    border-radius: 50%;
+}
+
+.uk {
+    width: 20pt;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+/* GRID AND GRID BEHAVIOUR */
+
+.master-container {
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    margin: 10pt;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10pt 10pt;
+    grid-auto-flow: row;
+    grid-template-areas: "skill skill education contact" "skill skill experience experience";
+    min-height: calc(95% - 25px);
+    max-height: calc(95% - 25px);
+}
+
+.container div {
+    background-color: #282828;
+    padding: 5pt;
+    border-radius: 5pt;
+}
+
+.container div:hover {
+    border: 2pt solid #ebdbb2;
+    margin: -2pt -2pt;
+}
+
+.skill {
+    grid-area: skill;
+    font-size: 12pt;
+}
+
+.education {
+    grid-area: education;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.experience {
+    grid-area: experience;
+}
+
+
+/* THINGS THAT ARE INSIDE THE GRID ITEMS */
+
+.pfp {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    /*padding: 5pt;*/
+    border-radius: 6pt;
+    /*border: 2pt solid #689d6a;*/
+    padding: 0;
+}
+
+.contact ul {
+    list-style-type: none;
+}
+
+.skill ul {
+    list-style-type: none;
+}
+
+.loading-animation {
+    text-align: right;
+    float: right;
+    margin-right: 15pt;
+}
+
+.skill-name {
+    font-size: 14pt;
+}
+
+.no-styling {
+    list-style-type: none;
+}
+
+
+/* TAG BEHAVOR */
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #458588;
+}
+
+a:hover {
+    color: #fabd2f;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+
+/* TEXT COLOR CLASSES */
+
+.red-text {
+    color: #cc241d;
+}
+
+.blue-text {
+    color: #458588;
+}
+
+.green-text {
+    color: #98971a;
+}
+
+.light-green-text {
+    color: #689d6a;
+}
+
+.purple-text {
+    color: #B16286;
+}
+
+.yellow-text {
+    color: #d79921;
+}
+
+.light-yellow-text {
+    color: #fabd2f;
+}
+
+.orange-text {
+    color: #d65d0e;
+}
+
+.big-text {
+    font-size: 12pt;
+}
