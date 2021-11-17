@@ -1,4 +1,2 @@
-## Creative CV
-
-Feel free to view it by opening this URL:
-https://luckytoaster.github.io/curriculum-vitae/
+## My Creative CV
+### [Feel free to take a look!](https://luckytoaster.github.io/curriculum-vitae/)
