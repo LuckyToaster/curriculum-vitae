@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='style.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
+
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 
             <div class="skill">
                 <code><span class='red-text'>[</span><span class='yellow-text'>Senén</span><span class='green-text'>@</span><span class='blue-text'>CV</span><span class='purple-text'>]</span><span class='red-text'>$</span></code>
-                <code>sudo pacman -S skills lang aim</code>
+                <code>sudo pacman -S skills about-me</code>
                 <h1><code>Skills</code></h1>
                 <ul id='skill-list'>
                     <li>
@@ -41,7 +41,7 @@
                     </li>
                     <li>
                         <code>
-                            <span class='skill-name'></i> DB Design & Administration => </span>
+                            <span class='skill-name'></i> Databases => </span>
                             <span class='skill-name orange-text'><i class="devicon-mysql-plain"></i> MySQL </span>
                             <span class='skill-name blue-text'><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
                             <span class='loading-animation'><span id='loading'>[#######...]</span>[75%]</span>
@@ -57,15 +57,15 @@
                         <code>
                             <span class='skill-name'>Web Dev =></span>
                             <i class="devicon-html5-plain orange"></i>
-                            <span class='skill-name orange-text' >HTML</span>
+                            <span id="html-span" class='skill-name orange-text' >HTML</span>
                             <i class="devicon-css3-plain blue"></i>
-                            <span class='skill-name blue'>CSS</span>
+                            <span id="css-span" class='skill-name blue'>CSS</span>
                             <i class="devicon-javascript-plain light-yellow"></i>
                             <span class="skill-name">/</span>
                             <i class="devicon-typescript-plain blue"></i>
                             <span class='skill-name'>+</span>
                             <i class="devicon-nodejs-plain light-green"></i>
-                            <span class='skill-name light-green'>NodeJs</span>
+                            <span class='skill-name light-green'>Node</span>
                             <span class='skill-name blue-text'><i class="devicon-react-original"></i> React</span>
                             <span class='loading-animation'><span id='loading'>[#####.....]</span>[50%]</span>
                         </code>
@@ -73,10 +73,14 @@
                     <li>
                         <code>
                             <span class="skill-name">Miscellaneous =></span>
-                            <span class='skill-name yellow-text'><i class="devicon-git-plain"></i> Git</span>
-                            <span class='skill-name light-green-text'><i class="devicon-vim-plain"></i> Vim</span>
-                            <span class="skill-name blue-text"><i class="devicon-vscode-plain"></i> VSCode</span>
-                            <span class='skill-name purple-text'><i class="devicon-latex-original"></i> LaTeX</span>
+                            <i class="devicon-git-plain yellow-text"></i> 
+                            <span id="git-span" class='skill-name yellow-text'>Git</span>
+                            <i class="devicon-vim-plain light-green-text"></i> 
+                            <span id="vim-span" class='skill-name light-green-text'>Vim</span>
+                            <i class="devicon-vscode-plain blue-text"></i> 
+                            <span id="vscode-span" class="skill-name blue-text">VSCode</span>
+                            <i class="devicon-latex-original purple-text"></i> 
+                            <span id="latex-span" class='skill-name purple-text'>LaTeX</span>
                             <span class='loading-animation'><span id='loading'>[#####.....]</span>[50%]</span>
                         </code>
                     </li>
@@ -85,7 +89,7 @@
                 <h1><code>About Me</code></h1>
                 <code>
                     <p>
-                        After completing my Multiplatform Application Development studies, I dove into a year-long, full-time internship at <a href="https://www.accenture.com/es-es">Accenture</a>, where I had the opportunity to work at one of their projects in <a href="https://www.airbus.com/en">Airbus</a>. I am grateful for this experience, as it was my first time working on a software development project.
+                        After completing my Multiplatform Application Development studies, I dove into a year-long, full-time internship at <a href="https://www.accenture.com/es-es" target="_blank">Accenture</a>, where I had the opportunity to work at one of their projects in <a href="https://www.airbus.com/en" target="_blank">Airbus</a>. I am grateful for this experience, as it was my first time working on a software development project.
                     </p>
                     <p>
                         Now pursuing a Computer Science degree, I am eager to further my education in the field. Having engaged in various part-time jobs during this first year, I seek to acquire hands-on experience throughout my degree program, to complement academics with IT related work.
@@ -144,24 +148,26 @@
                         <i class="fas fa-solid fa-music purple"></i>
                         <code>Music</code>
                     </li>
-                        <i class="fas fa-book green"></i>
-                        <code>Literature</code> & 
+                    <i class="fas fa-book green"></i>
+                    <code>Literature</code>
                     <li>
-                        
+
                     </li>
                     <li>
                     </li>
                 </ul>
-                
-                <h1 class='languages'><code>Languages</code></h1>
-                <span class='skill-name language'>
-                    <img class='spain' src='images/spain.png'>
-                    <code id='native'> Native</code>
-                </span>
-                <span class='skill-name language'>
-                    <img class='uk' src='images/uk.png'>
-                    <code id='native'> Fluent</code>
-                </span>
+
+                <div id="languages-container">
+                    <h1 class='languages'><code>Languages</code></h1>
+                    <span class='skill-name language'>
+                        <img class='spain' src='images/spain.png'>
+                        <code id='native'> Native</code>
+                    </span>
+                    <span class='skill-name language'>
+                        <img class='uk' src='images/uk.png'>
+                        <code id='native'> Fluent</code>
+                    </span>
+                </div>
             </div>
 
             <div class="contact">
@@ -177,11 +183,13 @@
                     </li>
                     <li>
                         <i class="fab fa-linkedin" id='linkedin-icon'></i>
-                        <code id="linkedin-span"><a href='www.linkedin.com/in/senén-m-2801a3224/' target='_blank'>Linkedin</a></code>
+                        <code
+                            id="linkedin-span"><a href='www.linkedin.com/in/senén-m-2801a3224/' target='_blank'>Linkedin</a></code>
                     </li>
                     <li>
                         <i id="github-icon" class="fab fa-github" id='github-icon'></i>
-                        <code id="github-span"><a href='https://github.com/LuckyToaster' target='_blank'>GitHub</a></code>
+                        <code
+                            id="github-span"><a href='https://github.com/LuckyToaster' target='_blank'>GitHub</a></code>
                     </li>
                 </ul>
                 <img class='pfp' src='images/pfp2.jpg'>
@@ -222,453 +230,13 @@
     </div>
 </body>
 
-<style>
-html, body {
-    margin: none;
-    padding: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: large;
-    color: #ebdbb2;
-    background-image: url('images/2.jpg');
-    overflow: hidden;
-}
-
-.supreme-div-father-of-all-divs {
-    height: 100%;
-}
-
-header {
-    background-color: #282828;
-    color: #ebdbb2;
-    padding: 4pt;
-    font-size: 15pt;
-    justify-content: space-between;
-    text-align: center;
-}
-
-@keyframes grow-shrink-icon {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.25); }
-  100% { transform: scale(1); }
-}
-
-@keyframes shrink-grow-icon {
-  0% { transform: scale(1.25); }
-  50% { transform: scale(1); }
-  100% { transform: scale(1.25); }
-}
-
-@keyframes grow-shrink-text {
-    0% {font-size: 100%; }
-    50% {font-size: 125%; }
-    100% {font-size: 100%; }
-}
-
-@keyframes shrink-grow-text {
-    0% {font-size: 125%; }
-    50% {font-size: 100%; }
-    100% {font-size: 125%; }
-}
-
-#linkedin-icon {
-    color: #458588;
-    animation: grow-shrink-icon 3s infinite;
-}
-
-#linkedin-span {
-    animation: grow-shrink-text 3s infinite;
-}
-
-#github-icon {
-    animation: shrink-grow-icon 3s infinite;
-}
-
-#github-span {
-    animation: shrink-grow-text 3s infinite;
-}
-
-#born {
-    float: left;
-    margin-left: 5pt;
-}
-
-#date {
-    float: right;
-    margin-right: 5pt;
-}
-
-#name {
-    float: center;
-    text-align: center;
-}
-
-#phone {
-    color: #b8bb26;
-}
-
-
-#mail {
-    color: #fabd2f;
-}
-
-#app-devel {
-    color: #458588;
-}
-
-#car-icon {
-    color: #fb4934;
-}
-
-#code {
-    color: red;
-}
-
-#laptop-icon {
-    color: #689d6a;
-}
-
-#book-icon {
-    color: #b16286;
-}
-
-#dumbbell-icon {
-    color: #d79921;
-}
-
-.languages {
-    margin: 0;
-    display: inline-block;
-    margin-right: 20pt;
-}
-
-.language {
-    /*margin-left: 10pt;*/
-    text-align: center;
-    align-items: center;
-
-}
-
-.spain {
-    width: 20pt;
-    height: auto;
-    border-radius: 50%;
-}
-
-.uk {
-    width: 20pt;
-    height: auto;
-    border-radius: 50%;
-}
-
-
-/* GRID AND GRID BEHAVIOUR */
-
-.master-container {
-    height: 100vh;
-}
-
-.container {
-    display: grid;
-    margin: 10pt;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10pt 10pt;
-    grid-auto-flow: row;
-    grid-template-areas: "skill skill education contact" "skill skill experience experience";
-    min-height: calc(95% - 25px);
-    max-height: calc(95% - 25px);
-}
-
-.container div {
-    background-color: #282828;
-    padding: 5pt;
-    border-radius: 5pt;
-}
-
-.container div:hover {
-    border: 2pt solid #ebdbb2;
-    margin: -2pt -2pt;
-}
-
-.skill {
-    grid-area: skill;
-    font-size: 12pt;
-}
-
-.education {
-    grid-area: education;
-}
-
-.contact {
-    grid-area: contact;
-}
-
-.experience {
-    grid-area: experience;
-}
-
-
-/* THINGS THAT ARE INSIDE THE GRID ITEMS */
-
-.pfp {
-    display: flex;
-    width: 80%;
-    height: auto;
-    margin: auto;
-    /*padding: 5pt;*/
-    border-radius: 6pt;
-    /*border: 2pt solid #689d6a;*/
-    padding: 0;
-}
-
-.contact ul {
-    list-style-type: none;
-}
-
-
-.skill ul {
-    list-style-type: none;
-}
-
-
-.loading-animation {
-    text-align: right;
-    float: right;
-    margin-right: 15pt;
-}
-
-.skill-name {
-    font-size: large;
-}
-
-.no-styling {
-    list-style-type: none;
-}
-
-
-/* TAG BEHAVOR */
-
-h1 {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #458588;
-}
-
-a:hover {
-    color: #fabd2f;
-}
-
-abbr {
-    text-decoration: none;
-}
-
-/* COLOR CLASSES */
-.red {color: #cc241d;}
-.blue {color: #458588;}
-.green {color: #98971a;}
-.light-green {color: #689d6a;}
-.purple {color: #B16286;}
-.yellow {color: #d79921;}
-.light-yellow {color: #fabd2f;}
-.orange {color: #d65d0e;}
-
-/* TEXT COLOR CLASSES */
-.red-text {color: #cc241d;}
-.blue-text {color: #458588;}
-.green-text {color: #98971a;}
-.light-green-text {color: #689d6a;}
-.purple-text {color: #B16286;}
-.yellow-text {color: #d79921;}
-.light-yellow-text {color: #fabd2f;}
-.orange-text {color: #d65d0e;}
-.big-text {font-size: 12pt;}
-
-
-
-
-
-            /*  MEDIA QUERY */
-            /*  MEDIA QUERY */
-            /*  MEDIA QUERY */
-            /*  MEDIA QUERY */
-
-
-
-
-@media screen and (max-width: 1000px) {
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: large;
-        color: #ebdbb2;
-        background-image: url('images/2.jpg');
-    }
-
-    header {
-        background-color: #282828;
-        color: #ebdbb2;
-        padding: 2px;
-        font-size: large;
-        justify-content: space-between;
-        text-align: center;
-        width: 100%;
-    }
-
-    #born {display: none;}
-    #date {display: none;}
-    #name {
-        float: center;
-        text-align: center;
-    }
-    
-    #phone {color: #b8bb26;}
-    #linkedin {color: #458588;}
-    #mail {color: #fabd2f;}
-    #app-devel {color: #458588;}
-    #car-icon {color: #fb4934;}
-    #code {color: red;}
-    #laptop-icon {color: #689d6a;}
-    #book-icon {color: #b16286;}
-    #dumbbell-icon {color: #d79921;}
-    
-    .languages {
-        /*margin: 0;*/
-        text-align: center;
-        /*display: inline-block;*/
-        /*margin-right: 20pt;*/
-    } 
-
-    .spain {
-        width: 20pt;
-        height: auto;
-        border-radius: 50%;
-    }
-    .uk {
-        width: 20pt;
-        height: auto;
-        border-radius: 50%;
-    }
-
-    /* I HAVE HIDDEN THESE BC THEY DO NOT FIT THE WAY I WANT */
-    #native{display:none;}
-    #fluent{display:none;}
-
-
-/* GRID AND GRID BEHAVIOUR */
-
-    .container {
-        margin: 10pt;
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr 1fr 1fr; 
-        gap: 15px 15px; 
-        grid-template-areas: "contact" "education" "skill" "experience"; 
-    }
-
-    .container div {
-        background-color: #282828;
-        padding: 5pt;
-        border-radius: 5pt;
-    }
-
-    .container div:hover {
-        border: 2pt solid #ebdbb2;
-        margin: -2pt -2pt;
-    }
-
-    .skill { 
-        grid-area: skill;
-        font-size: medium;
-    }
-
-    .education {
-        grid-area: education;
-        font-size: large;
-    }
-
-    .contact {
-        grid-area: contact;
-        font-size: large;
-    }
-
-    .experience {
-        grid-area: experience;
-    }
-
-    /* THINGS THAT ARE INSIDE THE GRID ITEMS */
-
-    .pfp {
-        /*display: flex;*/
-        width: 80%;
-        height: auto;
-        margin: auto;
-        margin-bottom: 7pt;
-        padding: 5pt;
-        border-radius: 6pt;
-        padding: 0;
-    }
-
-    .contact ul {list-style-type: none;}
-    .skill ul {list-style-type: none;}
-
-    .loading-animation {
-        text-align: right;
-        float: right;
-        margin-right: 10pt;
-    }
-    /* hiding the [####...] bc not enough space */
-    #loading {
-        display: none;
-    }
-
-    .skill-name {
-        text-align: center;
-        font-size: large;
-    }
-
-    .no-styling {list-style-type: none;}
-
-    #skill-list {
-        padding-left: 10pt;
-    }
-
-
-    /* TAG BEHAVOR */
-
-    h1 {
-        text-align: center;
-        margin: 0;
-    }
-
-    a {
-        text-decoration: none;
-        color: #458588;
-    }
-
-    a:hover {
-        color: #fabd2f;
-    }
-
-    abbr {
-        text-decoration: none;
-    }
-
-    /* TEXT COLOR CLASSES */
-    .red-text {color: #cc241d;}
-    .blue-text {color: #458588;}
-    .green-text {color: #98971a;}
-    .light-green-text {color: #689d6a;}
-    .purple-text {color: #B16286;}
-    .yellow-text {color: #d79921;}
-    .light-yellow-text {color: #fabd2f;}
-    .orange-text {color: #d65d0e;}
-    .big-text {font-size: 12pt;}
-    
-}
-
-</style>
+<script>
+    const body = document.querySelector('body');
+
+    container.addEventListener('wheel', (e) => {
+        const deltaY = e.deltaY;
+        body.scrollTop += deltaY;
+    });
+</script>
 
 </html>
